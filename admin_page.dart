@@ -11,430 +11,10 @@ String translateCategory(String category) {
     case "Kitchen":
       return "Kitchen";
     default:
-      return category; // fallback
+      return category;
   }
 }
-
-/// =======================================
-/// CONSTANTS FOR HALL LISTS
-/// =======================================
-const List<String> hallExpectedListIds = [
-  "list1",
-  "list2",
-  "list3",
-  "list4",
-  "list5",
-  "list6",
-  "list7",
-  "list8",
-  "list9",
-];
-
-const List<String> hallListNames = [
-  "All Brazillian",
-  "Walmart",
-  "Costco",
-  "Restaurant Depot",
-  "Southern Glazer's",
-  "Beers",
-  "Bottles",
-  "To Go",
-  "Fruits",
-];
-
-/// =======================================
-/// CONSTANTS FOR KITCHEN LISTS
-/// =======================================
-/// IDs das listas da cozinha
-const List<String> kitchenExpectedListIds = [
-  "kitchen1",
-  "kitchen2",
-  "kitchen3",
-  "kitchen4",
-  "kitchen5",
-  "kitchen6",
-  "kitchen7",
-  "kitchen8",
-  "kitchen9",
-  "kitchen10",
-  "kitchen11",
-];
-
-/// Nomes bonitos que aparecem na tela da Kitchen
-const List<String> kitchenListNames = [
-  "Wismettac Asian",
-  "KGI",
-  "Luso Foods",
-  "BAVE",
-  "Costco",
-  "Walmart",
-  "Amazon",
-  "Asiatico Boca",
-  "CHerney Brother",
-  "Sysco & US Foods",
-  "Restaurant Depot",
-];
-
-/// =======================================
-/// SEED DATA (Kitchen + Hall)
-/// =======================================
-const Map<String, List<Map<String, dynamic>>> hallSeedData = {
-  "kitchen1": [
-    {"name": "Bamboo Leaves", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Kimuchi Nomoto", "minStockKBR": 6.0, "minStockKFL": 6.0, "minStockKPL": 6.0},
-    {"name": "Furikake Nori", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Hondashi", "minStockKBR": 2.0, "minStockKFL": 2.0, "minStockKPL": 2.0},
-    {"name": "Nori Half", "minStockKBR": 5.0, "minStockKFL": 5.0, "minStockKPL": 5.0},
-    {"name": "White & Black Sesame", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Shoyu Gluten Free", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Sake Gallon", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Shichimi Togarashi", "minStockKBR": 2.0, "minStockKFL": 2.0, "minStockKPL": 2.0},
-    {"name": "Lychee", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Tuna Saku Blue Fin", "minStockKBR": 3.0, "minStockKFL": 3.0, "minStockKPL": 3.0},
-    {"name": "Sushi Ebi 5L", "minStockKBR": 2.0, "minStockKFL": 2.0, "minStockKPL": 2.0},
-    {"name": "Escolar Saku", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Kani Kama", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Sheredded Kani Kama", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Tempura Shrimp", "minStockKBR": 5.0, "minStockKFL": 5.0, "minStockKPL": 5.0},
-    {"name": "Eel Fish (Enguia)", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Kizami Wasabi", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Misso Paste (Sopa)", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Tilapia Fillets", "minStockKBR": 5.0, "minStockKFL": 5.0, "minStockKPL": 5.0},
-    {"name": "Noodles Yakisoba", "minStockKBR": 3.0, "minStockKFL": 3.0, "minStockKPL": 3.0},
-    {"name": "Spring Roll Vegetable", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Shoyo Box", "minStockKBR": 2.0, "minStockKFL": 2.0, "minStockKPL": 2.0},
-    {"name": "Eel Souce (Tare)", "minStockKBR": 2.0, "minStockKFL": 2.0, "minStockKPL": 2.0},
-    {"name": "Edamame", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Kombu Algea", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Jasmine Rice", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Sake Kagotobi (Special)", "minStockKBR": 3.0, "minStockKFL": 3.0, "minStockKPL": 3.0},
-    {"name": "Sushi Shoga Pink (GINGER)", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Wasabi Powder", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Sake Junmai/Nigori 300ML", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Sake Gallon (2ª linha)", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Sake 1.5LT", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Hamachi", "minStockKBR": 3.0, "minStockKFL": 3.0, "minStockKPL": 3.0},
-    {"name": "Wagyu (0.75LB)", "minStockKBR": 2.0, "minStockKFL": 2.0, "minStockKPL": 2.0},
-    {"name": "Katsoubushi", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Sliced Garlic", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Sushi Vinegar (bag in box)", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Mirin (bag in box)", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "White Spy Souce", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Yuzu", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Óleo de Gergelim", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0}
-  ],
-  "kitchen2": [
-    {"name": "Salmão", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Shiso Leaves", "minStockKBR": 2.0, "minStockKFL": 2.0, "minStockKPL": 2.0},
-    {"name": "Tuna Ground", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "HQ-01 (EMBALAGEM)", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "HQ-06 (EMBALAGEM)", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "HQ-08 (EMBALAGEM)", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "HQ-10 (EMBALAGEM)", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "HQ-15 (EMBALAGEM)", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "TZ-362 (EMBALAGEM)", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Gyoza Pork and Vegetables", "minStockKBR": 3.0, "minStockKFL": 3.0, "minStockKPL": 3.0},
-    {"name": "Masago & Tobico (ovas)", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Nori Half (preferencia Wismettac)", "minStockKBR": 6.0, "minStockKFL": 6.0, "minStockKPL": 6.0},
-    {"name": "Escolar Saku", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Masago Tobico Orange", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0}
-  ],
-  "kitchen3": [
-    {"name": "Polvo Cozido", "minStockKBR": 6.0, "minStockKFL": 6.0, "minStockKPL": 6.0},
-    {"name": "Camarão 51/60", "minStockKBR": 3.0, "minStockKFL": 3.0, "minStockKPL": 3.0},
-    {"name": "Café Delta", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Café Delta Decaf", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Saco Lixo", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0}
-  ],
-  "kitchen4": [
-    {"name": "Doce de Leite Balde", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Guava Spread", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Guaraná", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Guaraná Zero", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Maracujá", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0}
-  ],
-  "kitchen5": [
-    {"name": "Papel Toalha (Kirkland brand)", "minStockKBR": 3.0, "minStockKFL": 3.0, "minStockKPL": 3.0},
-    {"name": "Fabuloso", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Ovos", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Flor de Sal (francesa)", "minStockKBR": 2.0, "minStockKFL": 2.0, "minStockKPL": 2.0},
-    {"name": "Batata Pequena 10LB", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Azeite (Kirkland brand) 3Lt", "minStockKBR": 3.0, "minStockKFL": 3.0, "minStockKPL": 3.0},
-    {"name": "Manteiga (Kirkland sem sal)", "minStockKBR": 2.0, "minStockKFL": 2.0, "minStockKPL": 2.0},
-    {"name": "Heavy Cream", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Banana", "minStockKBR": 2.0, "minStockKFL": 2.0, "minStockKPL": 2.0},
-    {"name": "Edamame (urgência)", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Espinafre", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Morango", "minStockKBR": 4.0, "minStockKFL": 4.0, "minStockKPL": 4.0},
-    {"name": "Álcool Limpeza", "minStockKBR": 4.0, "minStockKFL": 4.0, "minStockKPL": 4.0},
-    {"name": "Abacaxi", "minStockKBR": 3.0, "minStockKFL": 3.0, "minStockKPL": 3.0},
-    {"name": "Limão amarelo", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0}
-  ],
-  "kitchen6": [
-    {"name": "Mac and Cheese", "minStockKBR": 10.0, "minStockKFL": 10.0, "minStockKPL": 10.0},
-    {"name": "Cookie (chips Aroy)", "minStockKBR": 8.0, "minStockKFL": 8.0, "minStockKPL": 8.0},
-    {"name": "Gás Massarico", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Prato Carpaccio", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Alho Negro", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0}
-  ],
-  "kitchen7": [
-    {"name": "Bobina Sushi Bar 2ply", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Bobina Thermal (coz/bar/caixa)", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Azeite Trufado Gallon", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Bico Massarico", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Decoração Sushi Bar", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0}
-  ],
-  "kitchen8": [
-    {"name": "Massa Harumaki", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Bifum", "minStockKBR": 2.0, "minStockKFL": 2.0, "minStockKPL": 2.0},
-    {"name": "Shimeji (Orlando)", "minStockKBR": 5.0, "minStockKFL": 5.0, "minStockKPL": 5.0}
-  ],
-  "kitchen9": [
-    {"name": "Churros", "minStockKBR": 3.0, "minStockKFL": 3.0, "minStockKPL": 3.0},
-    {"name": "Pangasius", "minStockKBR": 2.0, "minStockKFL": 2.0, "minStockKPL": 2.0},
-    {"name": "Guardanapo", "minStockKBR": 2.0, "minStockKFL": 2.0, "minStockKPL": 2.0},
-    {"name": "Nutella", "minStockKBR": 2.0, "minStockKFL": 2.0, "minStockKPL": 2.0}
-  ],
-  "kitchen10": [
-    {"name": "Orquídea", "minStockKBR": 2.0, "minStockKFL": 2.0, "minStockKPL": 2.0},
-    {"name": "Micro Green Rainbow Mix", "minStockKBR": 2.0, "minStockKFL": 2.0, "minStockKPL": 2.0},
-    {"name": "Laranja", "minStockKBR": 3.0, "minStockKFL": 3.0, "minStockKPL": 3.0},
-    {"name": "Limão", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Sweet Chilli", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Manga em Cubos", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Mayo", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Cream Cheese", "minStockKBR": 5.0, "minStockKFL": 5.0, "minStockKPL": 5.0},
-    {"name": "Plástico Filme", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Tofu", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Óleo Fritadeira", "minStockKBR": 5.0, "minStockKFL": 5.0, "minStockKPL": 5.0},
-    {"name": "Crispy Onion", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Batata Frita (US FOODS)", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Sorvete (SYSCO)", "minStockKBR": 5.0, "minStockKFL": 5.0, "minStockKPL": 5.0},
-    {"name": "Nutella", "minStockKBR": 2.0, "minStockKFL": 2.0, "minStockKPL": 2.0},
-    {"name": "Pangasius", "minStockKBR": 3.0, "minStockKFL": 3.0, "minStockKPL": 3.0},
-    {"name": "Peito Frango", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Panko Fine (SYSCO)", "minStockKBR": 3.0, "minStockKFL": 3.0, "minStockKPL": 3.0},
-    {"name": "Saco Lixo", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Luva Vinyl", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Morango Congelado", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Açúcar", "minStockKBR": 2.0, "minStockKFL": 2.0, "minStockKPL": 2.0},
-    {"name": "Farinha Trigo", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Vegetais 4-way", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Vegetais Blend California", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Chicken Nuggets", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Breaded Chicken Breast", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Vinagre", "minStockKBR": 2.0, "minStockKFL": 2.0, "minStockKPL": 2.0},
-    {"name": "Sacola TO GO", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Cheddar Shered", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Parmesao Shered", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Cheesecake NY (US FOODS)", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Bleach Liquid Germicidal", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Copo & Tampo Kids", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Canudo Preto", "minStockKBR": 6.0, "minStockKFL": 6.0, "minStockKPL": 6.0},
-    {"name": "Canudo Branco Envelopado", "minStockKBR": 6.0, "minStockKFL": 6.0, "minStockKPL": 6.0},
-    {"name": "Container Sopa Pequeno", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Container Sopa Grande", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Container Foam Branco Grande", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Container Foam Branco Pequeno", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0}
-  ],
-  "kitchen11": [
-    {"name": "Arroz Sushi", "minStockKBR": 4.0, "minStockKFL": 4.0, "minStockKPL": 4.0},
-    {"name": "Mini Flores", "minStockKBR": 3.0, "minStockKFL": 3.0, "minStockKPL": 3.0},
-    {"name": "Micro Green Rainbow Mix", "minStockKBR": 2.0, "minStockKFL": 2.0, "minStockKPL": 2.0},
-    {"name": "Curly Parsley (salsa decoracao)", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Basil (Manjericao)", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Arugula Baby (Rucula)", "minStockKBR": 3.0, "minStockKFL": 3.0, "minStockKPL": 3.0},
-    {"name": "Cilantro (coentro)", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Red Onion (cebola roxa)", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Cucumber (pepino)", "minStockKBR": 2.0, "minStockKFL": 2.0, "minStockKPL": 2.0},
-    {"name": "Grape Tomatoes (tomate cereja)", "minStockKBR": 5.0, "minStockKFL": 5.0, "minStockKPL": 5.0},
-    {"name": "Leek (Alho Poro)", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Celery", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Avocado Hass", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Cebolinha", "minStockKBR": 4.0, "minStockKFL": 4.0, "minStockKPL": 4.0},
-    {"name": "Couve", "minStockKBR": 2.0, "minStockKFL": 2.0, "minStockKPL": 2.0},
-    {"name": "Garlic Paste", "minStockKBR": 2.0, "minStockKFL": 2.0, "minStockKPL": 2.0},
-    {"name": "Ginger Paste", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Cream Cheese", "minStockKBR": 5.0, "minStockKFL": 5.0, "minStockKPL": 5.0},
-    {"name": "Queijo Mussarella Barra", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Queijo Mussarella Fatiado", "minStockKBR": 2.0, "minStockKFL": 2.0, "minStockKPL": 2.0},
-    {"name": "Manga em Cubos", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Beef (Knuckles)", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Peito Frango", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Tartar Sauce", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Lemon Juice (amarelo)", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Mustard Dijon", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Srirasha", "minStockKBR": 5.0, "minStockKFL": 5.0, "minStockKPL": 5.0},
-    {"name": "Sal", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Mel", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "MSG", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Sunday Mix (Amendoim)", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Azeitona sem Caroco", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Peeled Tomato Lata", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Doritos Box", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Knorr Pescado", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Banana caixa 20LB", "minStockKBR": 3.0, "minStockKFL": 3.0, "minStockKPL": 3.0},
-    {"name": "Shoyo ToGo (Panda)", "minStockKBR": 2.0, "minStockKFL": 2.0, "minStockKPL": 2.0},
-    {"name": "Etiqueta", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Detergente Rosa (Splah)", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Luva Preta", "minStockKBR": 5.0, "minStockKFL": 5.0, "minStockKPL": 5.0},
-    {"name": "Folha Plastico Djoy", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Papel Manteiga", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Pano Azul e Vermelho", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Embalagem Hot Meals 1001991", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Pano Azul", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0}
-  ],
-
-  "list1": [
-    {"name": "Casa di Amaro - Malbec", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Casa di Amaro - Cabernet Sauvigon", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Casa di Amaro - Merlot", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Casa di Amaro - Rosé", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Casa di Amaro - Chardonnay", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Casa di Amaro - Sauvignon Blanc", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Casa di Amaro - Pinot Grigio", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Casa di Amaro - Espumante", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Casa di Amaro - Moscato", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Casa di Amaro - Pinot Noir", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Casa di Amaro - Rosé Sparkling", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Mionetto Proseco 750ml", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Mionetto Proseco 167ml", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-  ],
-
-  "list2": [
-    {"name": "Ginger Beer", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Tonic Water", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Picolé de Uva", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-  ],
-
-  "list3": [
-    {"name": "Coca Cola", "minStockKBR": 3.0, "minStockKFL": 3.0, "minStockKPL": 3.0},
-    {"name": "Coca Zero", "minStockKBR": 3.0, "minStockKFL": 3.0, "minStockKPL": 3.0},
-    {"name": "Coca Diet", "minStockKBR": 3.0, "minStockKFL": 3.0, "minStockKPL": 3.0},
-    {"name": "Sprite", "minStockKBR": 3.0, "minStockKFL": 3.0, "minStockKPL": 3.0},
-    {"name": "Brisk Tea", "minStockKBR": 1.0, "minStockKFL": 1.0, "minStockKPL": 1.0},
-    {"name": "Perrier", "minStockKBR": 3.0, "minStockKFL": 3.0, "minStockKPL": 3.0},
-    {"name": "Leite Condensado", "minStockKBR": 2.0, "minStockKFL": 2.0, "minStockKPL": 2.0},
-    {"name": "Chantilly", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "RedBull", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Clara de Ovos", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Abacaxi", "minStockKBR": 5.0, "minStockKFL": 5.0, "minStockKPL": 5.0},
-    {"name": "Morango", "minStockKBR": 10.0, "minStockKFL": 10.0, "minStockKPL": 10.0},
-    {"name": "Mott's Apple Juice", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Panna", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Fanta", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-  ],
-
-  "list4": [
-    {"name": "Passion Fruit Syrup", "minStockKBR": 5.0, "minStockKFL": 5.0, "minStockKPL": 5.0},
-    {"name": "Mango Syrup", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Simple Syrup", "minStockKBR": 2.0, "minStockKFL": 2.0, "minStockKPL": 2.0},
-    {"name": "Coconut Syrup", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Coconut para Drinks", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Suco Manga", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Suco Abacaxi", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Refil Gás Espuma", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Guaraná Regular", "minStockKBR": 3.0, "minStockKFL": 3.0, "minStockKPL": 3.0},
-    {"name": "Guaraná Zero", "minStockKBR": 3.0, "minStockKFL": 3.0, "minStockKPL": 3.0},
-    {"name": "Strawberry Syrup", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Maguary Caju Concentrado", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Cranberry Juice Cocktail", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-  ],
-
-  "list5": [
-    {"name": "Vodka Aristocrata (House)", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Vodka Grey Goose", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Vodka Tito's", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Vodka Absolut 1 L", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Vodka Absolut 750ml", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Rum Aristocrata (Housa)", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Rum Bacardi", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Rum Captain Morgan (Spicy)", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Rum Captain Morgan (White)", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Martini Rosso", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Martini Dry", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Liquid Alchemyst Ginger", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Baileys Original", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Baileys Chocolate", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Baileys Creme Brule", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Licor 43", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Triple Sec", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Peach Tree", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Casamigos Reposado", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Casamigos Blanco", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Tequila Patron Reposado", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Tequila Patron Silver", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Arandas Tequila (House)", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Takara Plum Wine", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Aperol", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Kahlua Coffee Licor", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Grand Marnier", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Malibu", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Makers Mark", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Jamerson Whisky", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Red Label", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Black Label", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Suntory Toki Whisky", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Old Par", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Gin Aristocrata (House)", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Tankeray Gin", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Gordons Gin (House)", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Angostura Bitter", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Angostura Orange Bitter", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Caymus", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Rodney Strong", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Chateau Saint Michelle Cabernet", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Caymus The Walking Fool", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Hugel Pinot Blanc", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Campari", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Cachaça 51", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Cachaça Salinas Black", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-  ],
-
-  "list6": [
-    {"name": "Heineken Keg", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Sapporo Keg", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Corona Keg GG", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Corona Keg Pequena", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Stella Artois Keg GG", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Stella Keg Pequena", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-  ],
-
-  "list7": [
-    {"name": "Heineken Zero", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Heineken", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Sapporo", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Corona", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Stella Artois", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Kirin", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Kirin Light", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Bud Light", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Modelo", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Ultra", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Amazonia", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Asahi", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Sake Kurosawa 300ml", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Sake Yaegaki Junmai 300ml", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Sake 750ml", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Sake 1500ml", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-  ],
-
-  "list8": [
-    {"name": "Talher To Go", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Tape Copo To Go", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Sacola Pequena To Go", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Shoyu To Go", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-  ],
-
-  "list9": [
-    {"name": "Menta", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Laranja", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Limão", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-    {"name": "Limão Amarelo", "minStockKBR": 0.0, "minStockKFL": 0.0, "minStockKPL": 0.0},
-  ],
-};
-
-/// Helper: short location code
+/// Location
 String shortLocation(String location) {
   if (location == "Kingdom Boca Raton") return "KBR";
   if (location == "Kingdom Fort Lauderdale") return "KFL";
@@ -443,7 +23,7 @@ String shortLocation(String location) {
 }
 
 /// =======================================
-/// STEP 1: SELECT LOCATION (Boca vs Fort)
+/// 1 - Selecionar Local
 /// =======================================
 class AdminPage extends StatelessWidget {
   const AdminPage({super.key});
@@ -686,7 +266,7 @@ class AdminPage extends StatelessWidget {
 }
 
 /// =======================================
-/// STEP 2: SELECT CATEGORY (Hall/Kitchen) + PEDIDO
+/// 2 - Selecionar Categoria(Salão + Kitchen + Pedido)
 /// =======================================
 class AdminCategoryPage extends StatelessWidget {
   final String location;
@@ -838,7 +418,7 @@ class AdminCategoryPage extends StatelessWidget {
 }
 
 /// =======================================
-/// STEP 3: LISTS VIEW (Hall e Kitchen usam a mesma tela)
+/// 3 - Visualização da lista
 /// =======================================
 class AdminListsPage extends StatelessWidget {
   final String location;
@@ -1167,7 +747,7 @@ class AdminListsPage extends StatelessWidget {
 }
 
 // ============================================================================
-// TABELA DE ITENS — ESTOQUE / MIN / PEDIDO / +/-
+// 4 - Tabela de Itens
 // ============================================================================
 class _HallSectionTable extends StatelessWidget {
   final DocumentReference docRef;
@@ -1369,7 +949,7 @@ class _HallSectionTable extends StatelessWidget {
   }
 }
 // ============================================================================
-// PART 3 — AdminListItemsEditPage + AdminPedidoPage
+// 5 — AdminListItemsEditPage + AdminPedidoPage
 // ============================================================================
 class AdminListItemsEditPage extends StatelessWidget {
   final String listId;
@@ -1690,13 +1270,8 @@ class AdminListItemsEditPage extends StatelessWidget {
     );
   }
 }
-// ============================================================================
-// PÁGINA DE RESUMO DO PEDIDO — AdminPedidoPage (CHECKLIST AGRUPADO POR LISTA)
-// ============================================================================
-
 /// ============================================================================
-/// PÁGINA DE RESUMO DO PEDIDO — AdminPedidoPage
-/// (AGORA AGRUPANDO POR listName E COM BOTÃO "ENVIAR")
+/// 6 - Resumo do pedido - AdminPedidoPage
 /// ============================================================================
 class AdminPedidoPage extends StatefulWidget {
   final String location;
@@ -1805,7 +1380,23 @@ class _AdminPedidoPageState extends State<AdminPedidoPage> {
       appBar: AppBar(
         title: Text(title),
         actions: [
-          // 🔘 BOTÃO CLEAN CHECKED
+          // 👇 NEW: botão para ver histórico por dia
+          IconButton(
+            icon: const Icon(Icons.calendar_today),
+            tooltip: "Ver pedidos por dia",
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => AdminPedidoHistoryPage(
+                    location: widget.location,
+                  ),
+                ),
+              );
+            },
+          ),
+
+          // 🔘 BOTÃO CLEAN CHECKED (já existia)
           TextButton(
             onPressed: _hasChecked ? _cleanChecked : null,
             child: const Text(
@@ -2105,8 +1696,9 @@ class _AdminPedidoPageState extends State<AdminPedidoPage> {
     );
   }
 }
+
 // ============================================================================
-// MODELO INTERNO PARA ENVIO
+// Modelo interno para envio
 // ============================================================================
 class _EnvioItem {
   final String id; // chave única para checkbox/dropdown
@@ -2129,7 +1721,7 @@ class _EnvioItem {
 }
 
 // ============================================================================
-// PÁGINA DE ENVIO — checklist + dropdown fornecedor + FINALIZAR
+// Página envio do pedido
 // ============================================================================
 class AdminPedidoEnviarPage extends StatefulWidget {
   final String location;
@@ -2179,22 +1771,30 @@ class _AdminPedidoEnviarPageState extends State<AdminPedidoEnviarPage> {
 
     final batch = firestore.batch();
 
+    // gera chave de data para agrupar por dia: "YYYY-MM-DD"
+    final now = DateTime.now();
+    final String dateKey =
+        "${now.year.toString().padLeft(4, '0')}-"
+        "${now.month.toString().padLeft(2, '0')}-"
+        "${now.day.toString().padLeft(2, '0')}";
+
     // 1) Criar docs em hallPedidos
     for (final item in selectedItems) {
       final supplier = _supplierById[item.id] ?? _suppliers.first;
 
       final ref = hallPedidosColl.doc();
       batch.set(ref, {
-      'location': widget.location,
-      // salva o valor “cru” no banco: "Hall" ou "Kitchen"
-      'category': item.category,
-      'listName': item.listName,
-      'itemName': item.name,
-      'order': item.order,
-      'supplier': supplier,
-      'createdAt': FieldValue.serverTimestamp(),
-      'sent': false,
-});
+        'location': widget.location,
+        // "Hall" ou "Kitchen"
+        'category': item.category,
+        'listName': item.listName,
+        'itemName': item.name,
+        'order': item.order,
+        'supplier': supplier,
+        'createdAt': FieldValue.serverTimestamp(),
+        'dateKey': dateKey, // 👈 NOVO: chave de data textual
+        'sent': false,
+      });
 
     }
 
@@ -2241,7 +1841,7 @@ class _AdminPedidoEnviarPageState extends State<AdminPedidoEnviarPage> {
 
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(
-        content: Text("Itens enviados para o Hall e removidos do pedido!"),
+        content: Text("Itens enviados para o Salão e removidos do pedido!"),
       ),
     );
 
@@ -2388,23 +1988,18 @@ class _AdminPedidoEnviarPageState extends State<AdminPedidoEnviarPage> {
                                       // Nome do item + categoria
                                       Expanded(
                                         child: Column(
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment
-                                                  .start,
+                                          crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Text(
                                               item.name,
-                                              style:
-                                                  const TextStyle(
+                                              style: const TextStyle(
                                                 fontSize: 16,
-                                                fontWeight:
-                                                    FontWeight.w500,
+                                                fontWeight: FontWeight.w500,
                                               ),
                                             ),
                                             Text(
-                                              "${item.category} • Pedido: ${item.order}",
-                                              style:
-                                                  const TextStyle(
+                                              "${translateCategory(item.category)} • Pedido: ${item.order}",
+                                              style: const TextStyle(
                                                 fontSize: 12,
                                                 color: Colors.grey,
                                               ),
@@ -2412,7 +2007,6 @@ class _AdminPedidoEnviarPageState extends State<AdminPedidoEnviarPage> {
                                           ],
                                         ),
                                       ),
-
                                       const SizedBox(width: 8),
 
                                       // Dropdown fornecedor
@@ -2476,6 +2070,271 @@ class _AdminPedidoEnviarPageState extends State<AdminPedidoEnviarPage> {
             ],
           );
         },
+      ),
+    );
+  }
+}
+// ============================================================================
+// Página do histórico do pedido
+// ============================================================================
+class AdminPedidoHistoryPage extends StatefulWidget {
+  final String location;
+
+  const AdminPedidoHistoryPage({
+    super.key,
+    required this.location,
+  });
+
+  @override
+  State<AdminPedidoHistoryPage> createState() =>
+      _AdminPedidoHistoryPageState();
+}
+
+class _AdminPedidoHistoryPageState extends State<AdminPedidoHistoryPage> {
+  DateTime _selectedDate = DateTime.now();
+
+  // formato simples: DD/MM/YYYY
+  String get _formattedDate {
+    final d = _selectedDate;
+    final dd = d.day.toString().padLeft(2, '0');
+    final mm = d.month.toString().padLeft(2, '0');
+    final yyyy = d.year.toString();
+    return "$dd/$mm/$yyyy";
+  }
+
+  // limites de data no Firestore (início e fim do dia)
+  DateTime get _startOfDay =>
+      DateTime(_selectedDate.year, _selectedDate.month, _selectedDate.day);
+
+  DateTime get _endOfDay => _startOfDay.add(const Duration(days: 1));
+
+  Future<void> _pickDate() async {
+    final now = DateTime.now();
+    final first = DateTime(now.year - 2); // 2 anos pra trás
+    final last = DateTime(now.year + 1);  // 1 ano pra frente
+
+    final picked = await showDatePicker(
+      context: context,
+      initialDate: _selectedDate,
+      firstDate: first,
+      lastDate: last,
+    );
+
+    if (picked != null) {
+      setState(() {
+        _selectedDate = picked;
+      });
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final title =
+        "Admin - ${shortLocation(widget.location)} - Histórico";
+
+    // gera a mesma chave que salvamos em hallPedidos
+    final String dateKey =
+        "${_selectedDate.year.toString().padLeft(4, '0')}-"
+        "${_selectedDate.month.toString().padLeft(2, '0')}-"
+        "${_selectedDate.day.toString().padLeft(2, '0')}";
+
+    final query = FirebaseFirestore.instance
+        .collection('hallPedidos')
+        .where('location', isEqualTo: widget.location)
+        .where('dateKey', isEqualTo: dateKey);
+
+
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(title),
+      ),
+      body: Column(
+        children: [
+          // 🔹 BARRA FIXA COM O DIA SELECIONADO (NÃO ROLA JUNTO)
+          Container(
+            width: double.infinity,
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+            decoration: BoxDecoration(
+              color: Colors.grey.shade100,
+              border: Border(
+                bottom: BorderSide(color: Colors.grey.shade300),
+              ),
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text(
+                      "Pedidos enviados nesse dia:",
+                      style: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                    Text(
+                      _formattedDate,
+                      style: const TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
+                ),
+                OutlinedButton.icon(
+                  onPressed: _pickDate,
+                  icon: const Icon(Icons.calendar_today, size: 18),
+                  label: const Text("Escolher dia"),
+                ),
+              ],
+            ),
+          ),
+
+          // 🔽 LISTA ROLÁVEL DO CONTEÚDO
+          Expanded(
+            child: StreamBuilder<QuerySnapshot>(
+              stream: query.snapshots(),
+              builder: (context, snapshot) {
+                if (snapshot.hasError) {
+                  return Center(
+                    child: Text("Erro: ${snapshot.error}"),
+                  );
+                }
+
+                if (!snapshot.hasData) {
+                  return const Center(
+                    child: CircularProgressIndicator(),
+                  );
+                }
+
+                final docs = snapshot.data!.docs;
+
+                if (docs.isEmpty) {
+                  return const Center(
+                    child: Text(
+                      "Nenhum pedido enviado nesse dia.",
+                      textAlign: TextAlign.center,
+                    ),
+                  );
+                }
+
+                // Agrupa por listName (Rest Depot, Walmart, etc)
+                final Map<String, List<QueryDocumentSnapshot>> byListName = {};
+                for (final d in docs) {
+                  final data =
+                      Map<String, dynamic>.from(d.data() as Map);
+                  final listName =
+                      (data['listName'] ?? 'Sem nome').toString();
+
+                  byListName.putIfAbsent(listName, () => []);
+                  byListName[listName]!.add(d);
+                }
+
+                final listNames = byListName.keys.toList()..sort();
+
+                return ListView.builder(
+                  padding: const EdgeInsets.all(12),
+                  itemCount: listNames.length,
+                  itemBuilder: (context, index) {
+                    final listName = listNames[index];
+                    final itemsDocs = byListName[listName]!;
+
+                    return Card(
+                      margin: const EdgeInsets.only(bottom: 12),
+                      child: Padding(
+                        padding: const EdgeInsets.all(10),
+                        child: Column(
+                          crossAxisAlignment:
+                              CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              listName,
+                              style: const TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            const Divider(),
+                            ListView.builder(
+                              shrinkWrap: true,
+                              physics:
+                                  const NeverScrollableScrollPhysics(),
+                              itemCount: itemsDocs.length,
+                              itemBuilder: (context, i) {
+                                final d = itemsDocs[i];
+                                final data =
+                                    Map<String, dynamic>.from(
+                                        d.data() as Map);
+
+                                final itemName =
+                                    (data['itemName'] ?? '').toString();
+                                final supplier =
+                                    (data['supplier'] ?? '').toString();
+                                final category =
+                                    (data['category'] ?? '').toString();
+                                final order =
+                                    (data['order'] ?? 0) as int;
+
+                                final catLabel =
+                                    translateCategory(category);
+
+                                return Padding(
+                                  padding: const EdgeInsets.symmetric(
+                                      vertical: 4),
+                                  child: Row(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Expanded(
+                                        child: Column(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                          children: [
+                                            Text(
+                                              itemName,
+                                              style:
+                                                  const TextStyle(
+                                                fontSize: 16,
+                                                fontWeight:
+                                                    FontWeight.w500,
+                                              ),
+                                            ),
+                                            Text(
+                                              "$catLabel • Fornecedor: $supplier",
+                                              style:
+                                                  const TextStyle(
+                                                fontSize: 12,
+                                                color: Colors.grey,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                      const SizedBox(width: 8),
+                                      Text(
+                                        "Qtd: $order",
+                                        style: const TextStyle(
+                                          fontSize: 16,
+                                          fontWeight:
+                                              FontWeight.bold,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                );
+                              },
+                            ),
+                          ],
+                        ),
+                      ),
+                    );
+                  },
+                );
+              },
+            ),
+          ),
+        ],
       ),
     );
   }
