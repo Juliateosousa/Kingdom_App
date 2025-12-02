@@ -1,2 +1,2 @@
 # Kingdom_App
-My Area to store my files for my app project
+Here is my area to store my files and ideas for my app project, this project was made for my brother that works on a restaurant to make the stock work in a dinamic way because before this app everything was made by hand, this project have some AI help for the front end (i wanna clarify it) because i dont have much experience doing this part of the project and i have some help with some error messages too that was send to the user so dont be scared if you see a IA like message when using the app.
