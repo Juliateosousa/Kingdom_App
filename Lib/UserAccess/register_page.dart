@@ -86,7 +86,7 @@ class _RegisterPageState extends State<RegisterPage> {
       if (!mounted) return;
       Navigator.pop(context);
     } on FirebaseAuthException catch (e) {
-      debugPrint('🔥 FirebaseAuthException in registerUser:');
+      debugPrint('FirebaseAuthException in registerUser:');
       debugPrint('  code: ${e.code}');
       debugPrint('  message: ${e.message}');
       final msg = e.message ?? "Firebase error: ${e.code}";

@@ -227,7 +227,7 @@ class UserPage extends StatelessWidget {
       ),
       body: const Center(
         child: Text(
-          "Welcome, User 🙋‍♀️",
+          "Welcome, User!",
           style: TextStyle(fontSize: 22),
         ),
       ),
