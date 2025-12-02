@@ -13,13 +13,13 @@ Future<void> main() async {
       await Firebase.initializeApp(
         options: DefaultFirebaseOptions.currentPlatform,
       );
-      print('✅ Firebase initialized (first time)');
+      print('Firebase initialized (first time)');
     } else {
-      print('ℹ️ Firebase already initialized, skipping');
+      print('Firebase already initialized, skipping');
     }
   } catch (e) {
     // If something goes wrong, at least log it
-    print('❌ Firebase init failed: $e');
+    print('Firebase init failed: $e');
   }
 
   runApp(const MyApp());
