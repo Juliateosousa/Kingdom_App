@@ -51,7 +51,7 @@ class KitchenPage extends StatelessWidget {
     final finishedColl =
         FirebaseFirestore.instance.collection('finishedLists');
 
-    // 👇 Campos que mudam conforme a unidade (3 unidades)
+    // Campos que mudam conforme a unidade (3 unidades)
     late final String valueField;
     late final String minField;
     late final String orderField;
