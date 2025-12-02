@@ -1,3 +1,4 @@
+//This is just a base you use the comands to configure the firebase this file will be created automatically
 import 'package:flutter/foundation.dart';
 import 'package:firebase_core/firebase_core.dart';
 
@@ -18,21 +19,21 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyArN9qturAPfxsQC4X-G7_7lk0wp6tEg8c',
-    appId: '1:383599694014:android:ef1c2711bc0e993fd34eef',
-    messagingSenderId: '383599694014',
-    projectId: 'kingdomapp-52496',
-    storageBucket: 'kingdomapp-52496.firebasestorage.app',
+    apiKey: 'Your apiKey',
+    appId: 'Your appId',
+    messagingSenderId: 'Your messagingSenderId',
+    projectId: 'Your Project ID',
+    storageBucket: 'Your project storageBucket',
   );
 
   // ANDROID – igual ao seu
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDNe7LCu9FtmJfzwzm_dfa3Ygd7i4rZ0W8',
-    appId: '1:383599694014:ios:bca2fa8ff1ad6a83d34eef',
-    messagingSenderId: '383599694014',
-    projectId: 'kingdomapp-52496',
-    storageBucket: 'kingdomapp-52496.firebasestorage.app',
-    iosBundleId: 'com.example.kingdomApp',
+    apiKey: 'Your apiKey',
+    appId: 'Your appId',
+    messagingSenderId: 'Your messagingSenderId',
+    projectId: 'Your Project ID',
+    storageBucket: 'Your project storageBucket',
+    iosBundleId: 'Your iosBundleId',
   );
 }
