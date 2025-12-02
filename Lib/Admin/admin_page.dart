@@ -603,7 +603,6 @@ class AdminPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 // Kingdom Boca Raton
-                // Boca
                 SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
@@ -639,7 +638,7 @@ class AdminPage extends StatelessWidget {
 
                 const SizedBox(height: 16),
 
-                // ✅ Port St. Lucie
+                // Port St. Lucie
                 SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
@@ -656,7 +655,7 @@ class AdminPage extends StatelessWidget {
                 ),
 
 
-                // 👉 Botão: Carregar itens base (seed)
+                // Botão: Carregar itens base (seed)
                 // SizedBox(
                   // width: double.infinity,
                   // child: ElevatedButton(
@@ -853,7 +852,7 @@ class AdminListsPage extends StatelessWidget {
     final label = category == "Hall" ? "Salão" : category;
     final title = "Admin - ${shortLocation(location)} - $label";
 
-    // 👉 Confirmação antes de limpar os pedidos
+    // Confirmação antes de limpar os pedidos
     Future<void> confirmAndClearOrders() async {
       final bool? confirm = await showDialog<bool>(
         context: context,
@@ -929,7 +928,7 @@ class AdminListsPage extends StatelessWidget {
       appBar: AppBar(
         title: Text(title),
         actions: [
-          // 👉 BOTÃO: LIMPAR LISTA (zera apenas PEDIDO / order) COM CONFIRMAÇÃO
+          // BOTÃO: LIMPAR LISTA (zera apenas PEDIDO / order) COM CONFIRMAÇÃO
           TextButton(
             onPressed: () async {
               await confirmAndClearOrders();
@@ -1321,7 +1320,7 @@ class _HallSectionTable extends StatelessWidget {
 
                     const SizedBox(width: 12),
 
-                    // 👉 "Min: X" NORMAL FORA DO QUADRADO
+                    // "Min: X" NORMAL FORA DO QUADRADO
                     const SizedBox(width: 4),
                     Text(
                       "Min: $min",
